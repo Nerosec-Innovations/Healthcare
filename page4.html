@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<header>
+        <div class="marquee-wrapper"><h6 class="marquee-text">The health and well being of our patients and their health care team will always be our priority so we follow the best practices for cleanliness</h6></div>
+    </header>
+<!-- Header -->
+<div class="header-4">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-md-6 buttons mb-2">
+        <h5>Healthcare Solution service LLC</h5>
+        <button class="register-btn mt-2 bg-black">Completed Assignment</button>
+      </div>
+
+      <div class="col-md-6 text-center a-3 d-flex flex-column align-items-center">
+        <div class="d-flex gap-5">
+            <a href="#" class="mx-2 text-decoration-none text-black">Home</a>
+        <a href="#" class="mx-2 text-decoration-none text-black">Assignment</a>
+        <a href="#" class="mx-2 text-decoration-none text-black">Settings</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<div class="terms-section">
+
+  <h4>Terms and Conditions</h4>
+
+  <p class="terms-text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting, 
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+    including versions of Lorem Ipsum.
+  </p>
+
+  <!-- Signature -->
+  <div class="d-flex justify-content-center align-items-center gap-3 mt-4 flex-wrap">
+    <strong>Patient’s Signature:</strong>
+    <input type="text" id="signature" class="signature-box">
+  </div>
+
+  <!-- Submit -->
+  <button class="submit-btn" onclick="submitTerms()">Submit</button>
+
+</div>
+
+<script>
+  function submitTerms() {
+    const signature = document.getElementById("signature").value;
+
+    if (signature.trim() === "") {
+      alert("Please enter your signature");
+      return;
+    }
+
+    alert("Terms Accepted by: " + signature);
+
+    document.getElementById("signature").value = "";
+  }
+</script>
+
+</body>
+</html>

@@ -97,22 +97,6 @@ header {
     justify-content: center;
     color: #FFFFFF;
 }
-
-@media only screen and (max-width: 768px) {
-    .header .register-btn{
-        width: 100%;
-    }
-    .header .Search{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 992px) {
-
-    .header .Search{
-        width: 100%;
-    }
-}
-
 /* second page css  */
  body {
       margin: 0;
@@ -159,6 +143,168 @@ header {
       font-weight: bold;
       margin-bottom: 10px;
     }
+    .header .register-btn {
+        width: 50% ;
+    }
+     
+    /* page 3 style  */
+
+.header-3{
+  background-color: rgb(199,200,194);
+  padding: 3%;
+}
+.header-3 .a-3 a{
+  color: rgb(3,185,190) !important;
+}
+
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background */
+    .section-bg-3{
+      background: url('tablets_p2.png') no-repeat center center/cover;
+      padding: 60px 0;
+    }
+
+    .overlay {
+      padding: 40px 0;
+    }
+
+    /* Left Card */
+    .info-card {
+      background: #cfe3ec;
+      padding: 25px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .info-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Right Cards */
+    .assessment-card {
+      background: #eee;
+      border-radius: 12px;
+      padding: 12px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    .assessment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Buttons */
+    .btn-custom {
+      background: #17a2a2;
+      color: white;
+      border-radius: 10px;
+      padding: 6px 15px;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #138d8d;
+      transform: scale(1.05);
+    }
+
+    .icon-btn {
+      background: #17a2a2;
+      color: white;
+      border-radius: 8px;
+      padding: 10px;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .icon-btn:hover {
+      background: #138d8d;
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .view-all {
+      text-align: center;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .view-all:hover {
+      text-decoration: underline;
+    }
+
+    /* page-4 style  */
+    .header-4{
+      background: linear-gradient(to right, rgb(239, 251, 251), rgb(191, 239, 241));
+      padding: 3%;
+    }
+    
+    .header-4 .a-3 a{
+      color: rgb(3,185,190) !important;
+      }
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .terms-section {
+      background: linear-gradient(to bottom, #d9d9d9, #7fc6c6);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .terms-section h4 {
+      margin-bottom: 20px;
+    }
+
+    .terms-text {
+      max-width: 600px;
+      margin: auto;
+      color: #2f4f4f;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .signature-box {
+      width: 250px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      background: #eee;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .submit-btn {
+      background: #17a2a2;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 40px;
+      border: none;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #138d8d;
+      transform: scale(1.05);
+    }
+    /* Responsive Section  */
+
+@media only screen and (max-width: 992px) {
+
+    .header .Search{
+        width: 100%;
+    }
+}
 
     @media (max-width: 768px) {
       .card-box {
@@ -171,4 +317,30 @@ header {
         flex-wrap: wrap;
         gap: 10px;
       }
+       .header .register-btn{
+        width: 100%;
     }
+    .header .Search{
+        width: 100%;
+    }
+    }
+      @media (max-width: 768px) {
+      .assessment-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+    .header .register-btn {
+        width: 100% !important;
+    }
+    .header-4 .buttons{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 5%;
+    }
+  
+}
