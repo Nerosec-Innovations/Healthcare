@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login</title>
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-section {
+      background: linear-gradient(to bottom, #9fd3d3, #0f5f5f);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-card {
+      background: #eee;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      transition: 0.3s;
+    }
+
+    .login-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .btn-custom {
+      background: #17a2a2;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #138d8d;
+      transform: scale(1.03);
+    }
+
+    .role-select {
+      border-radius: 10px;
+    }
+
+    .link {
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-section">
+  <div class="login-card">
+
+    <h4 class="text-center mb-4">Login</h4>
+
+    <form id="loginForm">
+
+      <!-- Role -->
+      <div class="mb-3">
+        <select id="role" class="form-control role-select" required>
+          <option value="">Login As</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Patient">Patient</option>
+        </select>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <input type="email" id="email" class="form-control" placeholder="Email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <input type="password" id="password" class="form-control" placeholder="Password" required>
+      </div>
+
+      <!-- Button -->
+      <button class="btn-custom">Login</button>
+
+    </form>
+
+    <!-- Links -->
+    <div class="text-center mt-3">
+      <span class="link" onclick="goRegister()">Create Account</span>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const role = document.getElementById("role").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (!role || !email || !password) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    // Demo logic
+    alert(role + " Logged In Successfully!");
+
+    // Redirect example
+    if (role === "Doctor") {
+      window.location.href = "doctor-dashboard.html";
+    } else {
+      window.location.href = "patient-dashboard.html";
+    }
+  });
+
+  function goRegister() {
+    window.location.href = "register.html";
+  }
+</script>
+
+</body>
+</html>
