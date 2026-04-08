@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <!-- Bottstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Cystom Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <header>
+        <div class="marquee-wrapper">
+            <h6 class="marquee-text">The health and well being of our patients and their health care team will always be
+                our priority so we follow the best practices for cleanliness</h6>
+        </div>
+    </header>
+    <!-- 1.1 Banner Section -->
+    <section class="Banner-Section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="d-flex gap-4 align-items-center justify-content-center justify-content-md-end">
+                        <a href="desktop.html">Home</a>
+                        <a href="#">Assignment</a>
+                        <a href="#">Help</a>
+                        <button class="hover1" onclick="openPopup()">Login/Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1.2 Login Hero Section -->
+    <section class="Hero-Section Login bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <div class="d-flex flex-column gap-5">
+                        <div>
+                            <h3>Skip the travel! Take Online</h3>
+                        </div>
+                        <div>
+                            <h1>Doctor<span>Consultation</span></h1>
+                        </div>
+                        <div>
+                            <p>Connect instantly with a 24x7 specialist or choose to video visit a particular doctor</p>
+                        </div>
+                        <div><button class="hover1" >Go to Assignment</button></div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <figure><img src="./assets/images/Hero.png" alt=""></figure>
+                </div>
+            </div>
+              <div class="position-absolute popup-overlay" id="popup-overlay">
+                <div class="d-flex align-items-center flex-column gap-4">
+                    <div class="d-flex flex-column align-items-center align-items-lg-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center justify-content-lg-center gap-4">
+                        <h3 class="text-black">OTP</h3>
+                        <h4 class="text-center">OTP has been sent to your registered Email ID/Mobile Number</h4>
+                    </div>
+                    <p class="text-black text-center">Enter your OTP here</p>
+                    </div>
+                   <div class="d-flex gap-3 w-100 justify-content-center" >
+                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*" autofocus>
+                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+
+                   </div>
+<button class="hover1" type="submit" onclick="closePopup()" >Submit</button>              
+  </div>
+         <div class="d-flex w-100 align-items-center justify-content-end gap-3">
+            <a href="#">Resend OTP</a>
+            <button type="submit" class="hover1 rounded-5 px-3" onclick="opnPopup()">Forgot Password</button>
+         </div>
+            </div>
+             <div class="position-absolute popup-overlay" id="forgot-overlay">
+                <div class="d-flex align-items-center flex-column gap-4">
+                    <div class="d-flex flex-column align-items-center align-items-lg-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center justify-content-lg-center gap-4">
+                        <h3 class="text-black">Forgot Password</h3>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 w-100">
+                    <h4 class="w-50">Mobile Number:</h4>
+                    <input type="number" placeholder="Enter Mobile Number" class="w-75">
+                    </div>
+                    </div>
+                   <div class="d-flex gap-3 w-100 justify-content-center" >
+                   </div>
+<button class="hover1" type="submit" onclick="closPopup()" >Submit</button>              
+  </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+     <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
+</body>
+</html>

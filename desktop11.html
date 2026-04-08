@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <!-- Bottstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Cystom Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #e6f2f3;">
+       <header>
+        <div class="marquee-wrapper">
+            <h6 class="marquee-text">The health and well being of our patients and their health care team will always be
+                our priority so we follow the best practices for cleanliness</h6>
+        </div>
+    </header>
+    <!-- 1.1 Banner Section -->
+    <section class="Banner-Section bg-transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="d-flex justify-content-end align-items-center">
+                    <div class="d-flex gap-4 align-items-center justify-content-end">
+                        <a href="desktop.html">Home</a>
+                        <a href="#">Assignment</a>
+                        <a href="#">Help</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1.2 Id-Hero Section -->
+     <section class="Id-Hero">
+       <div class="container">
+
+  <div class="d-flex flex-column align-items-center gap-3">
+
+    <div class="position-relative">
+      <img id="profileImage" src="./assets/images/idhero.jpg" class="rounded-circle" width="120" height="120" style="object-fit:cover;">
+      
+      <label for="imageUpload" class="position-absolute bottom-0 end-0  text-white rounded-circle p-2" style="cursor:pointer; background: #2E8486;">
+        ✎
+      </label>
+      <input type="file" id="imageUpload" hidden>
+    </div>
+   <div class="d-flex flex-column gap-2">
+    <h3 id="name"></h3>
+    <div class="d-flex align-items-center align-items-md-center gap-2">  
+        <div class="d-flex align-items-lg-center" id="patientId"></div> 
+        <div class="circle"></div>
+        <span class="badge text-black" >Active Patient</span>
+         </div>
+ 
+</div>
+  </div>
+<div class="d-flex align-items-center justify-content-center ">
+  <div class="bg-white rounded-4 p-4 mt-4 d-flex flex-column gap-3 w-75 ">
+
+    <h6 class="text-start">PERSONAL INFORMATION</h6>
+
+    <div class="d-flex flex-column flex-md-row gap-3 align-items-center align-items-sm-center justify-content-between">
+      <div class="d-flex d-flex align-items-center justify-content-center gap-2">
+      <div class="d-flex align-items-center personalinfo justify-content-center"><i class="fa-regular fa-calendar"></i></div>
+      <h6>Age</h6>
+      </div>
+      <p id="age">24Years</p>
+    </div>
+
+     <div class="d-flex flex-column flex-md-row gap-3 align-items-center align-items-sm-center justify-content-between">
+      <div class="d-flex d-flex align-items-center justify-content-center gap-2">
+      <div class="d-flex align-items-center personalinfo justify-content-center"><i class="fa-solid fa-phone"></i></div>
+      <h6>Contact</h6>
+      </div>
+      <p id="age">+1 (555) 012-3456</p>
+    </div>
+
+     <div class="d-flex flex-column flex-md-row gap-3 align-items-center align-items-sm-center justify-content-between">
+      <div class="d-flex d-flex align-items-center justify-content-center gap-2">
+      <div class="d-flex align-items-center personalinfo justify-content-center"><i class="fa-solid fa-location-dot"></i></div>
+      <h6>Address</h6>
+      </div>
+      <p id="age">123 Medical Plaza, Suite400, NY</p>
+    </div>
+
+     <div class="d-flex flex-column flex-md-row gap-3 align-items-center align-items-sm-center justify-content-between">
+      <div class="d-flex d-flex align-items-center justify-content-center gap-2">
+      <div class="d-flex align-items-center personalinfo justify-content-center"><i class="fa-regular fa-envelope"></i></div>
+      <h6>Email</h6>
+      </div>
+      <p id="age">dua.walter@health.com</p>
+    </div>
+
+  </div>
+</div>
+   <div class="d-flex align-items-center justify-content-center">
+  <div class="d-flex flex-column text-white  justify-content-lg-start rounded-4 p-4 mt-4 gap-3  w-75">
+  <div><p class="text-white">LATEST HEALTH STATUS</p></div>
+  <div class="d-flex flex-column flex-md-row gap-3">
+    <div class="d-flex align-items-start align-items-lg-start w-50">
+     <div class="d-flex flex-column gap-2">
+      <p class="text-white">BLOOD GROUP</p>
+      <h4 class="text-white">A+</h4>
+     </div>
+    </div>
+
+    <div class="d-flex align-items-start align-items-lg-start w-50">
+     <div class="d-flex flex-column gap-2">
+      <p class="text-white">BMI</p>
+      <h4 class="text-white">22.4</h4>
+     </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <button class="hover1 px-4" onclick="saveProfile()">Save</button>
+    <button class="hover1" style="background: #BE038A !important;">Change Profile</button>
+  </div>
+
+</div>
+     </section>
+     <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    
+        <script src="custom.js"></script>
+</body>
+</html>
