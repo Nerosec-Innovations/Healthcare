@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
     body {
       margin: 0;
@@ -83,10 +84,129 @@
     animation: slide-text 16s linear infinite;
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body {
+      margin: 0;
+      font-family: "Outfit", sans-serif;
+}
+
+/* Global Style */
+h1 {
+    font-family: Outfit;
+font-weight: 700;
+font-style: Bold;
+font-size: 78px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #000000;
+}
+h2 {
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 70px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #000000;
+
+}
+h3{
+font-family: Outfit;
+font-weight: 400;
+font-style: Regular;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #6D6868;
+
+}
+h4 {
+    font-family: Outfit;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #000000;
+}
+h5 {
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #02676A;
+}
+h6 {
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+p{
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #656363;
+}
+a {
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #03B9BE;
+text-decoration: none;
+}
+span{
+    color: #03B9BE;
+}
+a:hover {
+    color: #000;
+}
+.hover1 {
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+background-color: #03B9BE;
+color: #FFFFFF;
+width: 250px;
+padding: 10px 5px;
+border-radius: 5px;
+border: none;
+transition: all 0.5s ease;
+
+}
+.hover1:hover {
+    color:  #ffffff;
+    background: #000000;
+ transform: translateY(-2px);
+
+    
+}
+>>>>>>> 1669912 (Pages uploaded by Usama)
 @keyframes slide-text {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+<<<<<<< HEAD
+=======
+/* 1.0 Header Style */
+
+>>>>>>> 1669912 (Pages uploaded by Usama)
 header {
     background: #03B9BE;
     padding: 2px 0;
@@ -97,6 +217,7 @@ header {
     justify-content: center;
     color: #FFFFFF;
 }
+<<<<<<< HEAD
 /* second page css  */
  body {
       margin: 0;
@@ -258,10 +379,309 @@ body {
 
     .terms-section {
       background: linear-gradient(to bottom, #d9d9d9, #7fc6c6);
+=======
+
+header .marquee-wrapper {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header .marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: slide-text 16s linear infinite;
+}
+/* 1.1 Banner Section */
+.Banner-Section {
+    padding: 50px 0 0 0;
+}
+
+.Banner-Section img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+/* 1.2 Hero-Section  */
+
+.Hero-Section {
+    background: #A1E8EA;
+    padding: 100px 0;
+    
+}
+.hero-section {
+    margin-bottom: 250px;
+    padding: 100px 0;
+}
+.Hero-Section img {
+    width: 100%;
+}
+.Hero-Section .position-absolute {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 20px;
+    width: 80%;
+    left: 10%;
+    top: 75%;
+}
+.Hero-Section .position-absolute #patients-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+.Hero-Section .position-absolute #patients-container::-webkit-scrollbar {
+    height: 6px;
+}
+.Hero-Section .position-absolute #patients-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.Hero-Section .position-absolute .card {
+    background: #f3f4f4;
+    width: 18%;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    overflow: hidden;
+        flex: 0 0 calc(20% - 16px); 
+
+}
+.Hero-Section .position-absolute .card img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.Hero-Section .position-absolute .card h6 {
+    transition: color 0.5s ease;
+}
+
+
+.Hero-Section .position-absolute .align-items-lg-center {
+    gap: 48px;
+}
+.Hero-Section.expanded-section {
+    margin-bottom: 225px; 
+}
+
+/* CARD FIX (MOST IMPORTANT) */
+.Hero-Section .position-absolute .patient-card {
+    flex: 0 0 auto;  /* 🔥 scroll fix */
+    width: 18%;
+    background: #f3f4f4;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* IMAGE */
+.Hero-Section .position-absolute .patient-card img {
+    width: 100%;
+}
+
+/* HOVER */
+.Hero-Section .patient-card:hover {
+    background: #A1E8EA;
+    transform: translateY(-5px);
+}
+/* 1.3 Assignment Section */
+.Assignment {
+    background: linear-gradient(90deg,#8beef1,#e2f2f3);
+    padding: 140px 0;
+}
+.Assignment .align-items-lg-start{
+    gap: 24px;
+}
+.Assignment .card {
+    background: #FFFFFF;
+    width: 68%;
+    border-radius: 10px;
+
+}
+.Assignment .card2 {
+        background: #AFDDF2;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+.Assignment .col-md-7 .justify-content-lg-center {
+    gap: 60px;
+}
+.Assignment .justify-content-md-center{
+    gap: 70px;
+}
+.Assignment .justify-content-md-center{
+    padding: 24px ;
+}
+/* 1.4 Footer   */
+footer {
+    background: #03b9be;
+    color: white;
+    padding: 48px 0;
+}
+footer .justify-content-center {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .justify-content-center  i {
+    color: #15D4D9;
+}
+/* 1.2 Login Hero Section */
+.Login {
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
+
+}
+.Login .position-absolute {
+    background: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    width: 80%;
+    left: 10%;
+    top: 15%;
+    height: 80%;
+    visibility: hidden;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(#A1E8EA,#F0F0F0);
+}
+
+.Login .position-absolute input {
+    width: 84px;
+    height: 80px;
+    border-radius: 15px;
+}
+.Login .position-absolute input:focus {
+    outline: none;
+    border: 2px solid #03B9BE;
+}
+/* 1.2 ID-Hero Section */
+.Id-Hero {
+    padding: 48px 0;
+}
+/* 1.3 Flower Section */
+.Flower {
+    padding: 100px 0;
+    background: linear-gradient(#F0D2E8,#8FE5E7);
+}
+.Flower h4 {
+    color: #6D6868;
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.Flower figure, .Flower img {
+    width: 100%;
+
+}
+/* OVERLAY */
+
+/* SHOW */
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Hero-Section .popup-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+
+    transform: translateY(-30px);
+    transition: 0.3s ease;
+}
+
+.popup-overlay.active .popup-box {
+    transform: translateY(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.Login .popup-box input {
+    text-align: center;
+    font-size: 18px;
+    height: 45px;
+}
+.Login .position-absolute .align-items-lg-center{
+    gap: 32px;
+}
+.Login .position-absolute .align-items-lg-center .justify-content-lg-center{
+    padding: 0 150px ;
+}
+   /* 1.2 ID-Hero Section */
+   .Id-Hero img {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+object-fit: cover;
+}
+.Id-Hero ,.align-items-center h4 {
+    color: #0B9195;
+}
+.Id-Hero .align-items-md-center .circle {
+width: 10px;
+height: 10px;
+background: #10B981;
+border-radius: 50%;
+}
+.Id-Hero .position-relative .align-items-lg-center {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: #A1E8EA;
+}
+.Id-Hero .personalinfo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #E7FAFB;
+}
+.Id-Hero .justify-content-lg-start {
+    background: #005F66;
+    border-radius: 50px;
+}
+.Id-Hero .justify-content-lg-start .align-items-lg-start {
+    background: #247B82;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+/* 1.4 Specialization Styling */
+
+    .Specialization .special-section {
+      background: linear-gradient(to bottom, #B7F5F7, #015658);
+>>>>>>> 1669912 (Pages uploaded by Usama)
       padding: 60px 20px;
       text-align: center;
     }
 
+<<<<<<< HEAD
     .terms-section h4 {
       margin-bottom: 20px;
     }
@@ -344,3 +764,313 @@ body {
     }
   
 }
+=======
+    .Specialization .card-box {
+      background: white;
+      padding: 50px 5px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .Specialization .card-box i {
+      font-size: 35px;
+      color: #0f8f8f;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+   .Specialization .card-box:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      background: #0f8f8f;
+      color: #fff;  
+    }
+
+   .Specialization .card-box:hover i {
+      color: #fff;
+    }
+
+   .Specialization .view-btn {
+      background: black;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 35px;
+      border: none;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+
+   .Specialization .view-btn:hover {
+      background: #222;
+      transform: scale(1.05);
+    }
+ /*  1.5 Families Stylling */
+ .Families {
+  padding: 80px 0;
+  background: linear-gradient(120deg, #F7E0F0 55%, #03B9BE 45%);
+}
+
+.Families h6 {
+color: #266A6C;
+text-align: start;
+}
+.Families h5 {
+  color: #666;
+  max-width: 450px;
+}
+
+.Families .boxes {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.Families .box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.Families .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.Families .icon.blue {
+  background: #d6f0f2;
+  color: #0fb9b1;
+}
+
+.Families .icon.pink {
+  background: #f8dede;
+  color: #e74c3c;
+}
+
+.Families .icon.yellow {
+  background: #f5ecd6;
+  color: #c59d0b;
+}
+.Families 
+.icon.green {
+  background: #dff5e3;
+  color: #27ae60;
+}
+
+.Families .box h2 {
+  font-weight: 700;
+}
+
+.Families  .box p {
+  color: #0fb9b1;
+  font-size: 14px;
+}
+
+/* 1.9 FAQ Styling */
+.FAQ #faqList {
+    gap: 80px;
+}
+/* 1.3 */
+/* Responsiveness */
+
+@media only screen and (max-width:1200px){
+    h1 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+  
+ .hero-section {
+    margin-bottom: 250px;
+ }
+
+    .Hero-Section .col-md-7 .gap-3 {
+        gap: 8px !important;
+    }
+    .Hero-Section .position-absolute {
+    
+    top: 76%;
+}
+.Login .position-absolute {
+    top: 13%;
+}
+.Hero-Section .position-absolute .align-items-lg-center {
+    gap: 26px;
+}
+}
+@media only screen and (max-width:992px){
+    h1 {
+        font-size: 58px;
+    }
+    h2 {
+        font-size: 55px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+   .Hero-Section {
+    padding: 70px 0;
+   }
+    .hero-section {
+             margin-bottom: 228px;
+
+    }
+    .Hero-Section ,.position-absolute .gap-4 {
+        gap: 10px !important;
+    }
+     .Hero-Section .position-absolute .card {
+        flex: 0 0 calc(33.33% - 14px);
+    }
+    .Hero-Section .position-absolute .patient-card {
+        width: 30%;
+    }
+    .Hero-Section .position-absolute .align-items-lg-center {
+    gap: 26px;
+}
+.Login .col-md-7 .gap-5 {
+    gap: 16px !important;
+}
+
+.Assignment .col-md-7 .justify-content-lg-center {
+    gap: 30px;
+}
+.Assignment .justify-content-md-center{
+    padding: 10px ;
+    gap: 40px;
+}
+.Id-Hero {
+    padding: 32px 0;
+}
+ .Families {
+    background: #e9e6f0;
+  }
+
+ .Families .boxes {
+    margin-top: 40px;
+  }
+.FAQ #faqList {
+    padding-top: 16px !important;
+    gap: 40px;
+}
+.FAQ #faqList span {
+    font-size: 30px !important;
+}
+}
+@media only screen and (max-width:767px){
+        h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 24px;
+
+    }
+    h6 {
+        font-size: 14px;
+    }
+    .hover1 {
+        font-size: 18px;
+    }
+    .Hero-Section {
+        padding: 50px 0;
+    }
+    .hero-section {
+     padding: 20px 0;
+        margin-bottom: 175px;
+    }
+    .Hero-Section button {
+        width: 100%;
+    }
+      
+    .Hero-Section .position-absolute {
+        position: static;
+        margin-top: 20px;
+    }
+    .Hero-Section .position-absolute .patient-card {
+        width: 100%;
+    }
+    .Assignment {
+    padding: 50px 0;
+}
+    .Assignment .align-items-lg-start {
+    gap: 8px;
+    }
+    .Assignment .col-md-7 .justify-content-lg-center {
+    gap: 6px;
+}
+     .Assignment .card {
+        width: 100%;
+     }
+     .Login {
+        margin-bottom: 0;
+     }
+      .Login .popup-box {
+        width: 100%;
+        padding: 20px;
+    }
+    .Login .position-absolute {
+        width: 100%;
+        left: 0 !important;
+        margin-top: 0 ;
+        height: 100%;
+
+    }
+    .Login .position-absolute .align-items-lg-center .justify-content-lg-center {
+    padding: 0 0px;
+}
+.Login .position-absolute input {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+.Id-Hero {
+    padding: 16px 0;
+}
+.Flower {
+    padding: 50px 0;
+}
+.Flower figure {
+    width: 75%;
+}
+.Id-Hero .align-items-lg-start {
+    width: 100% !important;
+}
+.Login .align-items-lg-center h4 {
+     width: 100% !important;
+
+}
+.FAQ .gap-5 {
+    gap: 30px !important;
+}
+.FAQ img {
+    height: 100% !important;
+}
+.FAQ #faqList
+ {
+    gap: 20px;
+}
+.FAQ #faqList span {
+    font-size: 30px !important;
+}
+.Families .boxes {
+    grid-template-columns: 1fr;
+  }
+}
+>>>>>>> 1669912 (Pages uploaded by Usama)

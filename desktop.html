@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <!-- Bottstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Cystom Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: #a1e8ea;">
+    <!-- 1.0 Header Section -->
+    <header>
+        <div class="marquee-wrapper">
+            <h6 class="marquee-text">The health and well being of our patients and their health care team will always be
+                our priority so we follow the best practices for cleanliness</h6>
+        </div>
+    </header>
+    <!-- 1.1 Banner Section -->
+    <section class="Banner-Section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="d-flex gap-4 align-items-center justify-content-center justify-content-md-end">
+                        <a href="#">Home</a>
+                        <a href="#">Assignment</a>
+                        <a href="#">Settings</a>
+                        <figure class="pt-2">
+                            <img src="./assets/images/banner.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1.2 Hero Section -->
+    <section class="Hero-Section hero-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <h3>Skip the travel! Take Online</h3>
+                        </div>
+                        <div>
+                            <h1>Welcome <span>John</span></h1>
+                        </div>
+                        <div>
+                            <p>Connect instantly with a 24x7 specialist doctor</p>
+                        </div>
+                        <div><button class="hover1">Go to Assignment</button></div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <figure><img src="./assets/images/Hero.png" alt=""></figure>
+                </div>
+            </div>
+            <div class="position-absolute ">
+                <div class="d-flex align-items-center flex-column gap-4">
+                    <div class="d-flex align-items-center justify-content-center ">
+                        <h4>Today’s Assignment</h4>
+                    </div>
+                    <div class="d-flex align-items-lg-center w-100 ">
+<div id="patients-container" class="w-100"></div>                    </div>
+<button class="hover1 btn-2" onclick="showPatients()">See all</button>              
+  </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- 1.3 Assignment Section -->
+    <section class="Assignment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-12">
+                    <div class="d-flex flex-column align-items-lg-start">
+                        <div class="d-flex align-items-start">
+                            <h5>CARING FOR THE HEALTH.</h5>
+                        </div>
+                        <div>
+                            <h2>Assignment</h2>
+                        </div>
+                        <div>
+                            <p>Taking care of one’s health is not merely the absence of illness, but a proactive,
+                                holistic approach encompassing physical, mental, and social well-being. To achieve this,
+                                it is essential to nourish the body with a balanced diet rich in nutrients, paired with
+                                regular physical activity—such as walking, yoga, or sports—to strengthen immunity and
+                                maintain fitness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12">
+                    <div class="d-flex flex-column justify-content-lg-center">
+                    <div class="d-flex  align-items-start">
+                        <div class=" d-flex flex-row justify-content-center align-items-center justify-content-md-center  card">
+                         <div class="d-flex flex-column align-items-center justify-content-center">
+                            <div class=" d-flex align-items-center justify-content-center card2">
+                                <figure >
+                                    <img src="./assets/images/pending.png" alt="" >
+                                </figure>
+                            </div>
+                            <div><h3>Pending</h3></div>
+                            <p>Assignment</p>
+                         </div>
+                         <figure><img src="./assets/images/Vectorright.png" alt=""></figure>
+                        </div>
+                    </div>
+                     <div class="d-flex  align-items-start justify-content-end">
+                        <div class=" d-flex flex-row justify-content-center justify-content-md-center align-items-center card">
+                         <figure><img src="./assets/images/Vectorleft.png" alt=""></figure>
+                        
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                            <div class=" d-flex align-items-center justify-content-center card2">
+                                <figure >
+                                    <img src="./assets/images/pending.png" alt="" >
+                                </figure>
+                            </div>
+                            <div><h3>Completed</h3></div>
+                            <p>Assignment</p>
+                         </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1.4 Specialization Sectio -->
+     <section class="Specialization">
+        <div class="special-section">
+  <div class="container">
+<div class="d-flex flex-column gap-5">
+    <h2>Find by Specialisation</h2>
+
+    <div class="row g-4">
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('Dentistry')">
+          <i class="bi bi-hospital"></i>
+          <div>Dentistery</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('Primary Care')">
+          <i class="bi bi-heart-pulse"></i>
+          <div>Primary Care</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('Cardiology')">
+          <i class="bi bi-heart"></i>
+          <div>Cardiology</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('MRI')">
+          <i class="bi bi-cpu"></i>
+          <div>MRI Resonance</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('Blood Test')">
+          <i class="bi bi-droplet"></i>
+          <div>Blood Test</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('Psychologist')">
+          <i class="bi bi-shield-check"></i>
+          <div>Psychologist</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('Laboratory')">
+          <i class="bi bi-beaker"></i>
+          <div>Laboratory</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card-box" onclick="selectSpecial('X-Ray')">
+          <i class="bi bi-file-medical"></i>
+          <div>X-Ray</div>
+        </div>
+      </div>
+
+    </div>
+</div>
+    <button class="view-btn" onclick="viewAll()">View All</button>
+
+  </div>
+</div>
+     </section>
+     <!-- 1.5 Families Section -->
+      <section class="Families">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 d-flex flex-column gap-3">
+        <h6>
+          CARING FOR THE HEALTH OF YOU AND YOUR FAMILY.
+        </h6>
+
+        <h2>Our Families</h2>
+
+        <h5 >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.
+        </h5>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="boxes d-grid">
+
+          <div class="box d-flex flex-column align-items-center gap-2">
+            <div class="icon blue">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h2 class="counter" data-target="5000">0</h2>
+            <p>Happy patients</p>
+          </div>
+
+          <div class="box d-flex flex-column align-items-center gap-2">
+            <div class="icon pink">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <h2 class="counter" data-target="200">0</h2>
+            <p>Hospitals</p>
+          </div>
+
+          <div class="box d-flex flex-column align-items-center gap-2">
+            <div class="icon yellow">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h2 class="counter" data-target="1000">0</h2>
+            <p>Laboratories</p>
+          </div>
+
+          <div class="box d-flex flex-column align-items-center gap-2">
+            <div class="icon green">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Expert Doctors</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- 1.9 Service Faq Section -->
+    <section class="FAQ contact-faq py-5 bg-white">
+        <div class="container ">
+            <div class="d-flex flex-column gap-5">
+                <div class="d-flex flex-column gap-3 align-items-center  align-items-md-center">
+                    <h5 class="fw-bold mb-3">Get your Answer</h5>
+                    <h2 class="text-start" style="color: #233561;">Frequently Asked Questions
+                    </h2>
+                </div>
+                <div class="row g-5">
+                   <div class="col-md-6 col-12">
+                    <figure class="h-100"><img src="./assets/images/faq.jpg" alt="" class="w-100 h-75" style="object-fit: cover;"></figure>
+                   </div>
+                    <div class="col-md-6 col-12 h-100">
+                    <div class="d-flex flex-column  h-100 w-100 pt-5" id="faqList">
+                        <div class="faq-item" style="cursor: pointer;" data-index="0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">How to take Assignment?
+                                </h4>
+                                <span style="font-size: 40px; color: #BE038A;" class="icon">+</span>
+                            </div>
+                            <p class="mt-3 text-muted d-none answer" style="font-weight: 400px !important;">
+                                We recommend a free inspection first. If the damage is limited (like a few missing
+                                shingles or a minor leak), a repair may be enough. But if the roof is older or has
+                                widespread damage, replacement is likely the better investment
+                            </p>
+                        </div>
+                        <div class=" faq-item" style="cursor: pointer;" data-index="1">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">How to take Assignment?
+                                </h4>
+                                <span style="font-size: 40px; color: #BE038A;">+</span>
+                            </div>
+                            <p class="mt-3 text-muted d-none">
+                                Most residential roofs can be completed in 1–2 days, depending on size, material, and
+                                weather conditions. We’ll give you a clear timeline before we begin.
+                            </p>
+                        </div>
+                        <div class=" faq-item" style="cursor: pointer;" data-index="2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">How to take Assignment?
+                                </h4>
+                                <span style="font-size: 40px; color: #BE038A;">+</span>
+                            </div>
+                            <p class="mt-3 text-muted d-none">
+                                We specialize in kitchen and bathroom remodeling, flooring, drywall, exterior siding,
+                                decks, porches, window replacements, and full home upgrades.
+
+                            </p>
+                        </div>
+                        <div class=" faq-item" style="cursor: pointer;" data-index="3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">How to take Assignment?
+                                </h4>
+                                <span style="font-size: 40px; color: #BE038A;">+</span>
+                            </div>
+                            <p class="mt-3 text-muted d-none">
+                                Yes, we assist with insurance claims from start to finish. We’ll provide the inspection
+                                report, documentation, and even meet with your adjuster if needed.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 1.4 Footer -->
+     <footer>
+  <div class="container">
+
+    <div class="row g-4">
+
+      <div class="col-md-8 d-flex flex-column gap-3">
+
+        <figure><img src="./assets/images/footer.svg" alt="Footer Icon"></figure>
+
+        <div class="d-flex flex-column gap-2 ">
+          <p class="text-white">NYC, USA</p>
+          <p class="text-white">000000</p>
+          <p class="text-white">+91-87878787</p>
+          <p class="text-white">info@healthcareLLC.com</p>
+        </div>
+
+        <div class="d-flex gap-3">
+          <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></a>
+            
+          <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+
+      </div>
+
+      <div class="col-md-4 col-12">
+
+
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3"><i class="fa-solid fa-chevron-right"></i><p href="#">Orthology</p></div>
+            <div class="d-flex gap-3"><i class="fa-solid fa-chevron-right"></i><p href="#">Neurology</p></div>
+            <div class="d-flex gap-3"><i class="fa-solid fa-chevron-right"></i><p href="#">Dental Care</p></div>
+            <div class="d-flex gap-3"><i class="fa-solid fa-chevron-right"></i><p href="#">Opthalmology</p></div>
+            <div class="d-flex gap-3"><i class="fa-solid fa-chevron-right"></i><p href="#">Cardiology</p></div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="mt-4">
+      <p>Copyright @2023 Healthcare Solution LLC.com. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+    <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
