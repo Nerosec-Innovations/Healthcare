@@ -12,6 +12,7 @@ fetch('https://randomuser.me/api/?results=50')
 })
 .catch(err => console.log(err));
 
+
 function renderPatients() {
     const container = document.getElementById('patients-container');
     const button = document.querySelector('.btn-2');
